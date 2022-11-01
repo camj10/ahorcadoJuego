@@ -3,15 +3,17 @@
 }
 
 body {
-    background-color: #4a4063;
-    color: #fff;
-    font-family: 'SF Pixelate', sans-serif;
+    background-color: #09f3a5;
+    color: rgb(236, 236, 236);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
+h1{
+    font-family: cursive;
+    color:#fff;
+}
 #wordContainer {
     margin-top: 20px;
 }
@@ -33,17 +35,25 @@ body {
     min-width: 12px;
 }
 
-#startButton {
+#botonInicio {
     margin-top: 20px;
     appearance: none;
     font-family: 'SF Pixelate', sans-serif;
     border: none;
     width: 300px;
     padding: 10px;
-    background: #d95d39;
-    color: #fff;
+    background: #553c35;
+    border: 1px solid #333232;
+    color: rgb(233, 211, 17);
     font-weight: 600;
     font-size: 20px;
-    border-radius: 4px;
+    border-radius: 20px;
     cursor: pointer;
+    letter-spacing: 1px;/*Espacio entre letras*/
+    transition: transform 20ms ease-in;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(226, 248, 24, 0.952);
+  }
+button:active {
+	transform: scale(0.95);/*Transforma la escala del botón a 0.95 (más chico)*/
 }
